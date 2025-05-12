@@ -4,7 +4,22 @@
 <title>Calendar</title>
 
 <body>
-
+<style>
+ body {
+   /* diameter of the circle */
+   --d: 1px; 
+   
+   background : radial-gradient(
+     circle at 
+        var(--d) 
+        var(--d), 
+        
+     #000 calc(var(--d) - 1px), 
+     #0000 var(--d)
+   ) 
+   0 0 / 18px 18px;
+}
+</style>
 <table border="dotted">
 <th colspan="16">Calendar</th></tr>
 <tr><td rowspan="20">time</td>
